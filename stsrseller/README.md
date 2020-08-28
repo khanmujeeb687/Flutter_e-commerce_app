@@ -1,16 +1,50 @@
 # stsrseller
 
-A new Flutter project.
+App features:-
 
-## Getting Started
+-Single seller e-commerce application with manpower provider feature.
 
-This project is a starting point for a Flutter application.
+-You are given two apps one is for seller and other one is for the customers.
 
-A few resources to get you started if this is your first Flutter project:
+-Push notification for order status update.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+-seller can manually add everything. App is fully dynamic.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Navigate to delivery address with google map.
+
+-Set deliverable areas where you provide delivery.
+
+-Payment gateway. COD and Online payment with UPI is provided
+
+-user get coins for every product they buy. seller can set and update it for each product.
+
+-Interactive material UI
+
+-Dynamic promotional banner. seller can change them.
+
+-order and coins transaction history.
+
+-Accounts secured with OTP.
+
+-Cloud function is written in node.js you just need to deploy it.
+
+-In short these apps provides every thing that a single seller application needs. you just need to follow the instructions to setup.
+
+What you need to do is:
+
+-Create a firebase project (create only one firebase project for these two apps):
+
+-create an android app:
+
+-go to developers.google.com and get a free api key: Since googlemap is free for android apps
+
+-Manually create a collection on firestore with name as seller and create a document with one field:array of string phone:add atleast one phone number for seller account
+manually then furthur you can add from seller app from add admin option after loging in from a seller phone no. after OTP authentication.You can implement this in your own way also.
+
+Add google-services.json to: android->app->
+
+Add google maps api key to: android->app->src->main->AndroidManifest.xml
+
+Place the document id of seller account you manually created in:lib->ui->widgets->start->register.dart on line 462 and 473
+
+Congratulations : Your single seller app setup is ready. Expand your business online and enjoy. Apk is hardly 10mb
